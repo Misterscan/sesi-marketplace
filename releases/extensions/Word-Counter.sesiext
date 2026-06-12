@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "name": "Word Counter",
+    "version": "1.0.0",
+    "description": "Adds a 'Count' button to the header to analyze your script.",
+    "icon": "📊",
+    "commands": [
+      "Count Words"
+    ]
+  },
+  "js": "\n\n(function() {\n  function initWordCounter() {\n    // Wait for the UI controls to be available in the header\n    const controls = document.querySelector('.controls');\n    if (!controls) {\n      setTimeout(initWordCounter, 500);\n      return;\n    }\n\n    // Create the button\n    const countBtn = document.createElement('button');\n    countBtn.className = 'btn';\n    countBtn.style.marginLeft = '8px';\n    countBtn.innerHTML = '📊 Count';\n    \n    const countWords = () => {\n      if (!window.editor) return;\n      \n      const text = window.editor.getValue();\n      const words = text.trim() ? text.trim().split(/\\s+/).length : 0;\n      const chars = text.length;\n      \n      // You can output to an alert, or even write directly to the integrated terminal\n      if (window.terminal) {\n        window.terminal.write(`\\r\\n\\x1b[36m[Word Counter]\\x1b[0m ${words} words, ${chars} characters.\\r\\n`);\n      } else {\n        alert(`Words: ${words}\\nCharacters: ${chars}`);\n      }\n    };\n\n    countBtn.onclick = countWords;\n    controls.appendChild(countBtn);\n\n    // Register with built-in Command Palette\n    if (window.registerCommand) {\n      window.registerCommand(\"Count Words\", countWords);\n    }\n    \n    console.log(\"✓ Word Counter extension loaded!\");\n  }\n\n  initWordCounter();\n})();"
+}

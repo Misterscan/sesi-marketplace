@@ -1,0 +1,143 @@
+[
+  {
+    "id": "twitr",
+    "type": "theme",
+    "name": "Twitr",
+    "version": "1.0.0",
+    "description": "Mimics the classic social media aesthetic with a high-contrast dark mode and signature blue accents. Clean, recognizable, and perfect for text-heavy content.",
+    "icon": "🐦",
+    "author": "Community",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Twitr.sesitheme"
+  },
+  {
+    "id": "frutiger",
+    "type": "theme",
+    "name": "Frutiger Aero",
+    "version": "1.0.0",
+    "description": "The optimistic tech aesthetic of the mid-2000s. Features glossy glass textures, vibrant cyans and greens, and humanist typography.",
+    "icon": "💧",
+    "author": "Community",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Frutiger-Aero.sesitheme"
+  },
+  {
+    "id": "frutiger-dark",
+    "type": "theme",
+    "name": "Frutiger Aero Dark",
+    "version": "1.0.0",
+    "description": "Frutiger Aero in dark mode.",
+    "author": "Community",
+    "icon": "🫧",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Frutiger-Aero-Dark.sesitheme"
+  },
+  {
+    "id": "midnight",
+    "type": "theme",
+    "name": "Midnight",
+    "version": "1.0.0",
+    "description": "Deep indigo and obsidian backgrounds, vibrant violet and cosmic teal accents, soft glowing borders, and high-legibility silver text.",
+    "author": "Misterscan",
+    "icon": "🌃",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Midnight.sesitheme"
+  },
+  {
+    "id": "catppuccin",
+    "type": "theme",
+    "name": "Catppuccin",
+    "version": "1.0.0",
+    "description": "A community-favorite soft pastel theme. Balances muted colors like rosewater, lavender, and blue to create a low-contrast, easy-on-the-eyes aesthetic.",
+    "icon": "🐱",
+    "author": "Community",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Catppuccin.sesitheme"
+  },
+  {
+    "id": "neon-nature",
+    "type": "theme",
+    "name": "Neon Nature",
+    "version": "1.0.0",
+    "description": "A futuristic cyber-jungle aesthetic combining deep organic greens with bright neon highlights.",
+    "icon": "🌿",
+    "author": "Community",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Neon-Nature.sesitheme"
+  },
+  {
+    "id": "winxp",
+    "type": "theme",
+    "name": "WinXP",
+    "version": "1.0.0",
+    "description": "Classic Windows XP Luna desktop theme for Sesi Studio.",
+    "icon": "🖼️",
+    "author": "Misterscan",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/WinXP.sesitheme"
+  },
+  {
+    "id": "y2k",
+    "type": "theme",
+    "name": "Y2K",
+    "version": "1.0.0",
+    "description": "A low-resolution digital aesthetic featuring 16-bit color constraints, beveled UI elements, and dithered gradients reminiscent of 90s multimedia software.",
+    "icon": "💾",
+    "author": "Misterscan",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Y2K.sesitheme"
+  },
+  {
+    "id": "stormcenter-95",
+    "type": "theme",
+    "name": "StormCenter 95",
+    "version": "1.0.0",
+    "description": "A nostalgic broadcast-inspired aesthetic modeled after 90s cable news weather graphics, featuring blue gradients and low-fidelity digital overlays.",
+    "icon": "⛈️",
+    "author": "Misterscan",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/StormCenter-95.sesitheme"
+  },
+  {
+    "id": "simplicity",
+    "type": "theme",
+    "name": "Simplicity",
+    "version": "1.0.0",
+    "description": "A warm, cozy theme with soft herbal accents and cream typography that feels like a warm hug.",
+    "icon": "🍵",
+    "author": "Misterscan",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Simplicity.sesitheme"
+  },
+  {
+    "id": "notebook",
+    "type": "theme",
+    "name": "Notebook",
+    "version": "1.0.0",
+    "description": "A clean, minimalist theme with a paper-like background and dark text, perfect for focused writing.",
+    "icon": "📖",
+    "author": "Community",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Notebook.sesitheme"
+  },
+  {
+    "id": "liquid-glass",
+    "type": "theme",
+    "name": "Liquid Glass",
+    "version": "1.0.0",
+    "description": "Smooth glassmorphism and vibrant gradients.",
+    "icon": "💎",
+    "author": "System",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Liquid-Glass.sesitheme"
+  },
+  {
+    "id": "word-counter",
+    "type": "extension",
+    "name": "Word Counter",
+    "version": "1.0.0",
+    "description": "Adds a 'Count' button to the header to analyze your script.",
+    "icon": "📊",
+    "author": "System",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/extensions/Word-Counter.sesiext"
+  }
+]
