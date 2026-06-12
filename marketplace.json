@@ -39,7 +39,7 @@
     "version": "1.0.0",
     "description": "Deep indigo and obsidian backgrounds, vibrant violet and cosmic teal accents, soft glowing borders, and high-legibility silver text.",
     "author": "Misterscan",
-    "icon": "main/icons/Midnight.svg",
+    "icon": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/icons/Midnight.svg",
     "license": "MIT",
     "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/themes/Midnight.sesitheme"
   },
