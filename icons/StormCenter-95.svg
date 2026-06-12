@@ -1,0 +1,49 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0033cc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000033;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffff00;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="scanlines" width="512" height="6" patternUnits="userSpaceOnUse">
+      <rect width="512" height="3" fill="#000000" fill-opacity="0.15" />
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#skyGrad)" />
+  
+  <!-- Radar Grid Lines -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#00ffff" stroke-width="2" stroke-opacity="0.3" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#00ffff" stroke-width="1" stroke-opacity="0.2" />
+  <line x1="256" y1="36" x2="256" y2="476" stroke="#00ffff" stroke-width="1" stroke-opacity="0.2" />
+  <line x1="36" y1="256" x2="476" y2="256" stroke="#00ffff" stroke-width="1" stroke-opacity="0.2" />
+
+  <!-- Stylized Storm Bolt -->
+  <path d="M290 80 L160 280 L240 280 L200 440 L350 210 L270 210 Z" fill="url(#boltGrad)">
+    <animate attributeName="opacity" values="1;0.7;1" dur="0.2s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Broadcast Frame Overlays -->
+  <rect x="0" y="420" width="512" height="92" fill="#000066" fill-opacity="0.8" />
+  <rect x="20" y="440" width="60" height="15" fill="#ff0000" />
+  <rect x="90" y="440" width="120" height="15" fill="#ffffff" fill-opacity="0.2" />
+  <rect x="220" y="440" width="272" height="15" fill="#ffffff" fill-opacity="0.1" />
+  
+  <!-- Corner Brackets -->
+  <path d="M40 40 L80 40 M40 40 L40 80" stroke="#ffffff" stroke-width="4" fill="none" />
+  <path d="M472 40 L432 40 M472 40 L472 80" stroke="#ffffff" stroke-width="4" fill="none" />
+  <path d="M40 472 L80 472 M40 472 L40 432" stroke="#ffffff" stroke-width="4" fill="none" />
+  <path d="M472 472 L432 472 M472 472 L472 432" stroke="#ffffff" stroke-width="4" fill="none" />
+
+  <!-- CRT Scanline Overlay -->
+  <rect width="512" height="512" fill="url(#scanlines)" pointer-events="none" />
+  
+  <!-- Digital Noise Blocks -->
+  <rect x="440" y="465" width="10" height="10" fill="#00ffff" fill-opacity="0.6" />
+  <rect x="455" y="465" width="10" height="10" fill="#00ffff" fill-opacity="0.3" />
+  <rect x="470" y="465" width="10" height="10" fill="#00ffff" fill-opacity="0.1" />
+</svg>

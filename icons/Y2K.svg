@@ -1,0 +1,53 @@
+<svg width="500" height="500" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+  <defs>
+    <!-- 16-bit Dither Pattern -->
+    <pattern id="dither" width="2" height="2" patternUnits="userSpaceOnUse">
+      <rect width="1" height="1" fill="rgba(255,255,255,0.15)" />
+      <rect x="1" y="1" width="1" height="1" fill="rgba(255,255,255,0.15)" />
+    </pattern>
+    
+    <!-- Bevel Filter for UI feel -->
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#c0c0c0" />
+      <stop offset="100%" stop-color="#808080" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background: Classic OS Teal -->
+  <rect width="100" height="100" fill="#008080" />
+  <rect width="100" height="100" fill="url(#dither)" />
+
+  <!-- Main UI Window Frame -->
+  <rect x="10" y="10" width="80" height="80" fill="#c0c0c0" />
+  <!-- Outer Bevel -->
+  <path d="M10 90 V10 H90" stroke="#ffffff" stroke-width="1.5" fill="none" />
+  <path d="M90 10 V90 H10" stroke="#404040" stroke-width="1.5" fill="none" />
+  
+  <!-- Title Bar -->
+  <rect x="13" y="13" width="74" height="8" fill="#000080" />
+  <rect x="13" y="13" width="74" height="8" fill="url(#dither)" />
+  
+  <!-- Inner Content Area (Inset Bevel) -->
+  <rect x="15" y="25" width="70" height="60" fill="#000000" />
+  <path d="M15 85 V25 H85" stroke="#808080" stroke-width="1" fill="none" />
+  <path d="M85 25 V85 H15" stroke="#ffffff" stroke-width="1" fill="none" />
+
+  <!-- Central Y2K Aesthetic Symbol: The Chrome Star/Sparkle -->
+  <!-- Globe Grid -->
+  <circle cx="50" cy="55" r="20" stroke="#00ff00" stroke-width="0.5" fill="none" opacity="0.5" />
+  <ellipse cx="50" cy="55" rx="8" ry="20" stroke="#00ff00" stroke-width="0.5" fill="none" opacity="0.5" />
+  <line x1="30" y1="55" x2="70" y2="55" stroke="#00ff00" stroke-width="0.5" opacity="0.5" />
+
+  <!-- 4-Pointed Star (The "Sparkle") -->
+  <path d="M50 30 L54 51 L75 55 L54 59 L50 80 L46 59 L25 55 L46 51 Z" fill="url(#chrome)" />
+  
+  <!-- High-Resolution "Pixel" Glint -->
+  <rect x="48" y="53" width="4" height="4" fill="#ffffff" />
+  
+  <!-- Corner UI Accents -->
+  <rect x="78" y="14" width="6" height="6" fill="#c0c0c0" />
+  <path d="M78 20 V14 H84" stroke="#ffffff" stroke-width="0.5" fill="none" />
+  <path d="M84 14 V20 H78" stroke="#404040" stroke-width="0.5" fill="none" />
+  <rect x="80" y="16" width="2" height="2" fill="#000000" />
+</svg>

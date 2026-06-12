@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#05050a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3a;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00f5d4;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#9d4edd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a189a;stop-opacity:0" />
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background Layer -->
+  <rect width="512" height="512" fill="url(#bg)" />
+  <!-- Soft Glowing Border -->
+  <rect x="15" y="15" width="482" height="482" rx="30" fill="none" stroke="#9d4edd" stroke-width="2" filter="url(#glow)" opacity="0.4" />
+  <!-- Central Cosmic Element -->
+  <circle cx="256" cy="256" r="160" fill="url(#core)" filter="url(#glow)" />
+  <!-- Accent Highlights -->
+  <circle cx="140" cy="140" r="8" fill="#00f5d4" opacity="0.8" />
+  <circle cx="372" cy="372" r="12" fill="#9d4edd" opacity="0.6" />
+  <circle cx="400" cy="120" r="4" fill="#ffffff" opacity="0.3" />
+</svg>
