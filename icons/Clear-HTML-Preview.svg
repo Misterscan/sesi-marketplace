@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="100%" stop-color="#141a29" />
+    </linearGradient>
+
+    <!-- Window Gradient -->
+    <linearGradient id="window-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Preview Page Gradient -->
+    <linearGradient id="page-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Glass Badge Gradient -->
+    <linearGradient id="glass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Glow/Borders -->
+    <linearGradient id="glow-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+
+    <linearGradient id="accent-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="drop-shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <filter id="badge-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.08" />
+
+  <!-- Background grid pattern -->
+  <g opacity="0.04">
+    <path d="M0 64 H512 M0 128 H512 M0 192 H512 M0 256 H512 M0 320 H512 M0 384 H512 M0 448 H512" stroke="#ffffff" stroke-width="1.5" />
+    <path d="M64 0 V512 M128 0 V512 M192 0 V512 M256 0 V512 M320 0 V512 M384 0 V512 M448 0 V512" stroke="#ffffff" stroke-width="1.5" />
+  </g>
+
+  <!-- SPLIT SCREEN WINDOW (Code + Visual) -->
+  <g transform="translate(48, 56)" filter="url(#drop-shadow)">
+    <!-- Window Outer frame -->
+    <rect width="416" height="384" rx="24" fill="url(#window-grad)" stroke="#1e293b" stroke-width="2.5" />
+
+    <!-- Window top navigation dot controls -->
+    <circle cx="28" cy="24" r="6" fill="#ff5f56" />
+    <circle cx="48" cy="24" r="6" fill="#ffbd2e" />
+    <circle cx="68" cy="24" r="6" fill="#27c93f" />
+
+    <!-- Vertical Split Divider -->
+    <line x1="208" y1="48" x2="208" y2="384" stroke="#1e293b" stroke-width="2" stroke-linecap="round" />
+    <!-- Tabs border line -->
+    <line x1="0" y1="48" x2="416" y2="48" stroke="#1e293b" stroke-width="2" />
+
+    <!-- Left Side: Source Editor Code Lines -->
+    <!-- Tab title -->
+    <rect x="96" y="16" width="60" height="12" rx="4" fill="#38bdf8" fill-opacity="0.1" />
+    <path d="M 106 22 H 146" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Code Block -->
+    <g transform="translate(18, 64)">
+      <!-- Line 1: document { -->
+      <rect x="10" y="8" width="80" height="12" rx="6" fill="#f97316" /> <!-- document -->
+      <rect x="96" y="8" width="12" height="12" rx="4" fill="#94a3b8" /> <!-- { -->
+
+      <!-- Line 2:   page { -->
+      <rect x="25" y="32" width="40" height="12" rx="6" fill="#f97316" /> <!-- page -->
+      <rect x="71" y="32" width="12" height="12" rx="4" fill="#94a3b8" /> <!-- { -->
+
+      <!-- Line 3:     heading "Hello" -->
+      <rect x="40" y="56" width="65" height="12" rx="6" fill="#818cf8" /> <!-- heading -->
+      <rect x="111" y="56" width="55" height="12" rx="6" fill="#34d399" /> <!-- "Hello" -->
+
+      <!-- Line 4:     paragraph "Welcome" -->
+      <rect x="40" y="80" width="75" height="12" rx="6" fill="#f97316" opacity="0.8" />
+      <rect x="121" y="80" width="50" height="12" rx="6" fill="#34d399" opacity="0.8" />
+
+      <!-- Line 5:     image source="img.png" -->
+      <rect x="40" y="104" width="50" height="12" rx="6" fill="#f97316" opacity="0.8" />
+      <rect x="96" y="104" width="75" height="12" rx="6" fill="#38bdf8" opacity="0.8" />
+
+      <!-- Line 6:   } -->
+      <rect x="25" y="128" width="12" height="12" rx="4" fill="#94a3b8" opacity="0.7" />
+
+      <!-- Line 7: } -->
+      <rect x="10" y="152" width="12" height="12" rx="4" fill="#94a3b8" opacity="0.7" />
+    </g>
+
+    <!-- Right Side: Live Compiled Webpage Preview -->
+    <!-- Tab title -->
+    <rect x="260" y="16" width="60" height="12" rx="4" fill="#34d399" fill-opacity="0.1" />
+    <path d="M 270 22 H 310" stroke="#34d399" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Web Page Mockup Panel -->
+    <g transform="translate(224, 64)">
+      <!-- Rendered Page Background -->
+      <rect width="176" height="304" rx="16" fill="url(#page-grad)" />
+
+      <!-- Page Header Banner -->
+      <rect x="12" y="12" width="152" height="40" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+      <rect x="24" y="24" width="55" height="12" rx="6" fill="#1e293b" /> <!-- H1 -->
+      <rect x="116" y="26" width="36" height="8" rx="4" fill="#8b5cf6" /> <!-- Nav -->
+
+      <!-- Page Rendered Content Group (representing text layout) -->
+      <!-- Main paragraph -->
+      <rect x="12" y="64" width="152" height="8" rx="4" fill="#94a3b8" opacity="0.7" />
+      <rect x="12" y="78" width="120" height="8" rx="4" fill="#94a3b8" opacity="0.7" />
+
+      <!-- Styled Card with image and label -->
+      <g transform="translate(12, 100)">
+        <rect width="152" height="128" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+        
+        <!-- Image placeholder visual -->
+        <rect x="10" y="10" width="132" height="70" rx="8" fill="#f1f5f9" />
+        <!-- Miniature landscape graphic inside image -->
+        <path d="M 20 70 L 60 40 L 95 62 L 115 50 L 140 70" fill="none" stroke="#cbd5e1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="115" cy="26" r="6" fill="#fef08a" />
+
+        <!-- Card text description -->
+        <rect x="10" y="92" width="90" height="8" rx="4" fill="#64748b" />
+        <rect x="10" y="106" width="60" height="6" rx="3" fill="#94a3b8" />
+      </g>
+    </g>
+  </g>
+
+  <!-- COMPILE ACTION: ARROW CURVING FROM LEFT TO RIGHT -->
+  <path d="M 190 220 Q 256 160 300 220" fill="none" stroke="url(#accent-glow)" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="10 5" opacity="0.95" />
+
+  <!-- HERO ELEMENT: GLOWING EYE BADGE IN THE CENTER -->
+  <g transform="translate(206, 206)" filter="url(#drop-shadow)">
+    <!-- Glowing outline backplate -->
+    <circle cx="50" cy="50" r="50" fill="url(#glow-border)" opacity="0.95" filter="url(#badge-glow)" />
+    <!-- Glass body -->
+    <circle cx="50" cy="50" r="46" fill="url(#glass-grad)" />
+
+    <!-- Stylized Eye Graphic inside Badge -->
+    <g transform="translate(18, 18)" stroke-linecap="round" stroke-linejoin="round">
+      <!-- Outer eye outline path -->
+      <path d="M 4 32 C 16 12, 48 12, 60 32 C 48 52, 16 52, 4 32 Z" fill="none" stroke="#38bdf8" stroke-width="4.5" />
+      <!-- Iris/pupil outer -->
+      <circle cx="32" cy="32" r="14" fill="none" stroke="#a855f7" stroke-width="4" />
+      <!-- Pupil inner -->
+      <circle cx="32" cy="32" r="6" fill="#34d399" />
+      <!-- Highlight/glint -->
+      <circle cx="36" cy="28" r="2.5" fill="#ffffff" />
+    </g>
+  </g>
+
+  <!-- SUCCESS DECORATION (Top Right Live Indicator) -->
+  <g transform="translate(416, 24)" filter="url(#drop-shadow)">
+    <!-- Pulse Ring -->
+    <circle cx="20" cy="20" r="20" fill="#10b981" fill-opacity="0.2" />
+    <!-- Center Green Badge -->
+    <circle cx="20" cy="20" r="14" fill="#10b981" />
+    <!-- Lightning/Refresh bolt -->
+    <path d="M 21 10 L 14 21 H 20 L 19 30 L 26 19 H 20 Z" fill="#ffffff" />
+  </g>
+
+  <!-- CODE BADGE DECORATION (Bottom Left) -->
+  <g transform="translate(32, 408)" filter="url(#drop-shadow)">
+    <rect width="64" height="40" rx="14" fill="#818cf8" stroke="#6366f1" stroke-width="1.5" />
+    <!-- </> Symbol -->
+    <path d="M 20 25 L 14 20 L 20 15 M 44 15 L 50 20 L 44 25 M 34 13 L 30 27" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

@@ -1,5 +1,26 @@
 [
   {
+    "id": "git-connector",
+    "type": "extension",
+    "name": "Git Connector",
+    "version": "1.0.0",
+    "description": "Integrated Git repository control and file diffing for Sesi Studio.",
+    "icon": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/icons/Git-Connector.svg",
+    "author": "System",
+    "license": "MIT",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/extensions/Git-Connector.sesiext"
+  },
+  {
+    "id": "chtml-previewer",
+    "type": "extension",
+    "name": "ClearHTML Previewer",
+    "version": "1.0.0",
+    "description": "Live previewer for ClearHTML files.",
+    "icon": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/icons/Clear-HTML-Preview.svg",
+    "author": "System",
+    "downloadUrl": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/releases/extensions/ClearHTML-Previewer.sesiext"
+  },
+  {
     "id": "twitr",
     "type": "theme",
     "name": "Twitr",
