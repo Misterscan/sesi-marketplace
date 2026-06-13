@@ -3,7 +3,7 @@
     "id": "git-connector",
     "type": "extension",
     "name": "Git Connector",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Integrated Git repository control and file diffing for Sesi Studio.",
     "icon": "https://raw.githubusercontent.com/misterscan/sesi-marketplace/main/icons/Git-Connector.svg",
     "author": "System",
